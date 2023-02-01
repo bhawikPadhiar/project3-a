@@ -8,8 +8,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.0-alpha1",
+    "checkbox": "^0.0.1",
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "textarea": "^0.3.0",
+    "vue": "^2.6.14",
+    "vue-radio": "^0.1.0",
+    "vue-select": "^3.20.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

@@ -1,0 +1,34 @@
+{
+  "postss": [
+    {
+      "name": "asdsa",
+      "address": "asdas",
+      "operatingSystem": [
+        "windows"
+      ],
+      "value": "Two",
+      "language": "Javascript",
+      "id": 10
+    },
+    {
+      "name": "dasdsa",
+      "address": "asdsa",
+      "operatingSystem": [
+        "Mac"
+      ],
+      "value": "Two",
+      "language": "C#",
+      "id": 12
+    },
+    {
+      "name": "ravii",
+      "address": "605",
+      "operatingSystem": [
+        "windows"
+      ],
+      "value": "One",
+      "language": "Javascript",
+      "id": 13
+    }
+  ]
+}
