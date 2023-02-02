@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="form-control">
         <p>noidea</p>
         <input type="radio" id="one" @change="addrado" value="One" v-model="rado" />
 <label for="one">One</label>
@@ -12,13 +12,17 @@
 <script>
 export default{
     props:{
-       type:{
-        posts: Array
-       }
+     
+        textradio:{
+           type:String,
+        default:function(){
+            return ''
+        }
+    }
     },
     data(){
         return{
-            rado:false
+            rado:this.textradio
            // names:this.name
         }
     },

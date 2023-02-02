@@ -1,7 +1,7 @@
 <template>
     <div class="v-select">
         <p>language</p>
-        <select @change="addlang" v-model="lang">
+        <select class="form-control" @change="addlang" v-model="lang">
             <option disabled value="">please select</option>
             <option>Php</option>
             <option>Javascript</option>
@@ -14,13 +14,16 @@
 <script>
 export default{
     props:{
-       type:{
-        posts: Array
-       }
+        textlangs:{
+           type:String,
+        default:function(){
+            return ''
+        }
+        }
     },
     data(){
         return{
-            lang:''
+            lang:this.textlangs
            // names:this.name
         }
     },

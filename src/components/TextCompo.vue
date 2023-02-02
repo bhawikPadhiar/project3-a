@@ -1,28 +1,32 @@
 <template>
     <div>
-      <h1>Hmmm</h1>
-      <p>Name</p>
-      <input type="text" @change="addname" v-model="name"/><br>      
+
+        <p>Name</p>
+        <input class="form-control"  type="text"  @change="addname" v-model="name" /><br>
+      
     </div>
 </template>
 
 <script>
-export default{
-    props:{
-       type:{
-        posts: Array
-       }
-    },
-    data(){
-        return{
-            name:''
-           // names:this.name
+export default {
+    props: {
+        textdata:{
+           type:String,
+            default:''
         }
     },
-    methods:{
-        addname(){
-            this.$emit('addnames',this.name)
-            console.warn(this.name)
+  
+    data() {
+        return {
+            name:this.textdata
+          
+            // names:this.name
+        }
+    },
+    methods: {
+        addname() {
+            this.$emit('addnames', this.name)
+             // console.warn(this.name)
         }
 
     }
